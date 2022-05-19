@@ -26,9 +26,11 @@ class Game:
             return False
 
         for y in range(3):
-            for x in range(3):
+            for x in range(4):
                 if self.state[y, x] == self.state[y+1, x]:
                     return False
+        for y in range(4):
+            for x in range(3):
                 if self.state[y, x] == self.state[y, x+1]:
                     return False
         
